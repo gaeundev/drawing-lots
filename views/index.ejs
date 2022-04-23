@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drawing Lots</title>
+        <link rel="stylesheet" href="styles/common.css" />
+    </head>
+    <body>
+        <header><h1>독서 발표자</h1></header>
+        <div>
+            <!-- 드래그 앤 드롭 영역 -->
+            <section>
+                <label class="uploadBox" htmlFor="fileUpload">
+                    <img id="dragImg" src="images/upload.png" alt="파일 업로드 아이콘" />
+                    <p>File Drag & Drop</p>
+                </label>
+                <input id="fileUpload" class="d-none" name="uploads" type="file" />
+            </section>
+            <section>
+                <div id="drawingLots" class="d-none">
+                    <ul></ul>
+                    <button type="button" onclick="pickHandler()">뽑기</button>
+                </div>
+
+                <div id="pick" class="d-none">
+                    <form action="/pick" method="post">
+                        <div>
+                            <h1>당첨자</h1>
+                            <h3 id="pickMember"></h3>
+                        </div>
+                        <input type="hidden" id="winner" name="winner" />
+                        <input type="hidden" id="member" name="member" />
+                        <input type="hidden" id="path" name="path" />
+                        <button type="submit">확인</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <script src="scripts/ejs.js"></script>
+    </body>
+    <!-- <a href="https://www.flaticon.com/free-icons/upload" title="upload icons">Upload icons created by Ilham Fitrotul Hayat - Flaticon</a> -->
+</html>

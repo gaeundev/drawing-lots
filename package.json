@@ -1,0 +1,21 @@
+{
+    "name": "random",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "babel-node service/app.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/core": "^7.17.9",
+        "@babel/node": "^7.16.8",
+        "@babel/preset-env": "^7.16.11",
+        "dotenv": "^16.0.0",
+        "ejs": "^3.1.7",
+        "express": "^4.17.3",
+        "multer": "^1.4.4",
+        "xlsx": "^0.18.5"
+    }
+}

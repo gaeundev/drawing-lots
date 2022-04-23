@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.d-none {
+    display: none;
+}
+
+.icon {
+    animation: motion 0.3s linear 0s infinite alternate;
+}
+
+@keyframes motion {
+    0% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 10px;
+    }
+}
